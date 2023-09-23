@@ -1,5 +1,3 @@
-import ast_file from "./files/fib.json";
-
 import { File, Term } from "./types";
 
 function interpret(term: Term, environment: Record<string, any>) {
