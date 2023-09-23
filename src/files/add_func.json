@@ -1,0 +1,66 @@
+{
+  "name": ".\\add.rinha",
+  "expression": {
+    "kind": "Let",
+    "name": {
+      "text": "add",
+      "location": { "start": 4, "end": 7, "filename": ".\\add.rinha" }
+    },
+    "value": {
+      "kind": "Function",
+      "parameters": [
+        {
+          "text": "a",
+          "location": { "start": 14, "end": 15, "filename": ".\\add.rinha" }
+        },
+        {
+          "text": "b",
+          "location": { "start": 17, "end": 18, "filename": ".\\add.rinha" }
+        }
+      ],
+      "value": {
+        "kind": "Binary",
+        "lhs": {
+          "kind": "Var",
+          "text": "a",
+          "location": { "start": 28, "end": 29, "filename": ".\\add.rinha" }
+        },
+        "op": "Add",
+        "rhs": {
+          "kind": "Var",
+          "text": "b",
+          "location": { "start": 32, "end": 33, "filename": ".\\add.rinha" }
+        },
+        "location": { "start": 28, "end": 33, "filename": ".\\add.rinha" }
+      },
+      "location": { "start": 10, "end": 36, "filename": ".\\add.rinha" }
+    },
+    "next": {
+      "kind": "Print",
+      "value": {
+        "kind": "Call",
+        "callee": {
+          "kind": "Var",
+          "text": "add",
+          "location": { "start": 45, "end": 48, "filename": ".\\add.rinha" }
+        },
+        "arguments": [
+          {
+            "kind": "Int",
+            "value": 1,
+            "location": { "start": 49, "end": 50, "filename": ".\\add.rinha" }
+          },
+          {
+            "kind": "Int",
+            "value": 2,
+            "location": { "start": 51, "end": 52, "filename": ".\\add.rinha" }
+          }
+        ],
+        "location": { "start": 45, "end": 53, "filename": ".\\add.rinha" }
+      },
+      "location": { "start": 39, "end": 54, "filename": ".\\add.rinha" }
+    },
+    "location": { "start": 0, "end": 54, "filename": ".\\add.rinha" }
+  },
+  "location": { "start": 0, "end": 54, "filename": ".\\add.rinha" }
+}

@@ -1,0 +1,22 @@
+{
+  "name": ".\\tuple.rinha",
+  "expression": {
+    "kind": "Print",
+    "value": {
+      "kind": "Tuple",
+      "first": {
+        "kind": "Bool",
+        "value": true,
+        "location": { "start": 7, "end": 8, "filename": ".\\tuple.rinha" }
+      },
+      "second": {
+        "kind": "Int",
+        "value": 2,
+        "location": { "start": 9, "end": 10, "filename": ".\\tuple.rinha" }
+      },
+      "location": { "start": 6, "end": 11, "filename": ".\\tuple.rinha" }
+    },
+    "location": { "start": 0, "end": 12, "filename": ".\\tuple.rinha" }
+  },
+  "location": { "start": 0, "end": 12, "filename": ".\\tuple.rinha" }
+}
