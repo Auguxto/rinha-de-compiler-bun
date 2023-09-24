@@ -1,6 +1,6 @@
 import { File, Term } from "./types";
 
-function interpret(term: Term, environment: Record<string, any>) {
+function interpret(term: Term, environment: Record<string, any>): any {
   switch (term.kind) {
     case "Var":
       return environment[term.text];
@@ -12,7 +12,8 @@ function interpret(term: Term, environment: Record<string, any>) {
       return term.value;
     case "Print":
       const value = interpret(term.value, environment);
-      return console.log(value);
+      console.log(value);
+      return value;
     case "Binary":
       const lhs = interpret(term.lhs, environment);
       const rhs = interpret(term.rhs, environment);
@@ -91,7 +92,7 @@ async function main(path: string) {
 
 if (process.env.ENVIRONMENT === "dev") {
   const start = process.hrtime();
-  await main("src/files/fib.json");
+  await main("src/files/tuple2.json");
   const diff = process.hrtime(start);
   const timeInSeconds = diff[0] + diff[1] / 1e9;
   console.log(`Interpreter Exec. Time: ${timeInSeconds} segundos`);
