@@ -64,6 +64,22 @@ function interpret(term: Term, environment: Record<string, any>): any {
       const second = interpret(term.second, environment);
 
       return `(${first}, ${second})`;
+    case "First":
+      var tuple = interpret(term.value, environment);
+      const first_value = String(tuple)
+        .replace("(", "")
+        .replace(")", "")
+        .split(",")[0]
+        .trim();
+      return first_value;
+    case "Second":
+      var tuple = interpret(term.value, environment);
+      const second_value = String(tuple)
+        .replace("(", "")
+        .replace(")", "")
+        .split(",")[1]
+        .trim();
+      return second_value;
     case "Call":
       const func = interpret(term.callee, environment);
       const args = term.arguments.map((arg) => interpret(arg, environment));
@@ -92,7 +108,7 @@ async function main(path: string) {
 
 if (process.env.ENVIRONMENT === "dev") {
   const start = process.hrtime();
-  await main("src/files/tuple2.json");
+  await main("src/files/teste1.json");
   const diff = process.hrtime(start);
   const timeInSeconds = diff[0] + diff[1] / 1e9;
   console.log(`Interpreter Exec. Time: ${timeInSeconds} segundos`);

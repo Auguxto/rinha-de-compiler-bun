@@ -94,4 +94,14 @@ export type Term =
       parameters: Parameter[];
       value: Term;
       location: Location;
+    }
+  | {
+      kind: "First";
+      value: Term;
+      location: Location;
+    }
+  | {
+      kind: "Second";
+      value: Term;
+      location: Location;
     };
