@@ -1,0 +1,229 @@
+{
+  "name": "src/files/teste.rinha",
+  "expression": {
+    "kind": "Let",
+    "name": {
+      "text": "fib",
+      "location": { "start": 4, "end": 7, "filename": "src/files/teste.rinha" }
+    },
+    "value": {
+      "kind": "Function",
+      "parameters": [
+        {
+          "text": "n",
+          "location": {
+            "start": 14,
+            "end": 15,
+            "filename": "src/files/teste.rinha"
+          }
+        }
+      ],
+      "value": {
+        "kind": "If",
+        "condition": {
+          "kind": "Binary",
+          "lhs": {
+            "kind": "Var",
+            "text": "n",
+            "location": {
+              "start": 28,
+              "end": 29,
+              "filename": "src/files/teste.rinha"
+            }
+          },
+          "op": "Lt",
+          "rhs": {
+            "kind": "Int",
+            "value": 2,
+            "location": {
+              "start": 32,
+              "end": 33,
+              "filename": "src/files/teste.rinha"
+            }
+          },
+          "location": {
+            "start": 28,
+            "end": 33,
+            "filename": "src/files/teste.rinha"
+          }
+        },
+        "then": {
+          "kind": "Var",
+          "text": "n",
+          "location": {
+            "start": 41,
+            "end": 42,
+            "filename": "src/files/teste.rinha"
+          }
+        },
+        "otherwise": {
+          "kind": "Binary",
+          "lhs": {
+            "kind": "Call",
+            "callee": {
+              "kind": "Var",
+              "text": "fib",
+              "location": {
+                "start": 58,
+                "end": 61,
+                "filename": "src/files/teste.rinha"
+              }
+            },
+            "arguments": [
+              {
+                "kind": "Binary",
+                "lhs": {
+                  "kind": "Var",
+                  "text": "n",
+                  "location": {
+                    "start": 62,
+                    "end": 63,
+                    "filename": "src/files/teste.rinha"
+                  }
+                },
+                "op": "Sub",
+                "rhs": {
+                  "kind": "Int",
+                  "value": 1,
+                  "location": {
+                    "start": 66,
+                    "end": 67,
+                    "filename": "src/files/teste.rinha"
+                  }
+                },
+                "location": {
+                  "start": 62,
+                  "end": 67,
+                  "filename": "src/files/teste.rinha"
+                }
+              }
+            ],
+            "location": {
+              "start": 58,
+              "end": 68,
+              "filename": "src/files/teste.rinha"
+            }
+          },
+          "op": "Add",
+          "rhs": {
+            "kind": "Call",
+            "callee": {
+              "kind": "Var",
+              "text": "fib",
+              "location": {
+                "start": 71,
+                "end": 74,
+                "filename": "src/files/teste.rinha"
+              }
+            },
+            "arguments": [
+              {
+                "kind": "Binary",
+                "lhs": {
+                  "kind": "Var",
+                  "text": "n",
+                  "location": {
+                    "start": 75,
+                    "end": 76,
+                    "filename": "src/files/teste.rinha"
+                  }
+                },
+                "op": "Sub",
+                "rhs": {
+                  "kind": "Int",
+                  "value": 2,
+                  "location": {
+                    "start": 79,
+                    "end": 80,
+                    "filename": "src/files/teste.rinha"
+                  }
+                },
+                "location": {
+                  "start": 75,
+                  "end": 80,
+                  "filename": "src/files/teste.rinha"
+                }
+              }
+            ],
+            "location": {
+              "start": 71,
+              "end": 81,
+              "filename": "src/files/teste.rinha"
+            }
+          },
+          "location": {
+            "start": 58,
+            "end": 81,
+            "filename": "src/files/teste.rinha"
+          }
+        },
+        "location": {
+          "start": 24,
+          "end": 85,
+          "filename": "src/files/teste.rinha"
+        }
+      },
+      "location": {
+        "start": 10,
+        "end": 87,
+        "filename": "src/files/teste.rinha"
+      }
+    },
+    "next": {
+      "kind": "Print",
+      "value": {
+        "kind": "Binary",
+        "lhs": {
+          "kind": "Str",
+          "value": "fib: ",
+          "location": {
+            "start": 96,
+            "end": 103,
+            "filename": "src/files/teste.rinha"
+          }
+        },
+        "op": "Add",
+        "rhs": {
+          "kind": "Call",
+          "callee": {
+            "kind": "Var",
+            "text": "fib",
+            "location": {
+              "start": 106,
+              "end": 109,
+              "filename": "src/files/teste.rinha"
+            }
+          },
+          "arguments": [
+            {
+              "kind": "Int",
+              "value": 10000,
+              "location": {
+                "start": 110,
+                "end": 112,
+                "filename": "src/files/teste.rinha"
+              }
+            }
+          ],
+          "location": {
+            "start": 106,
+            "end": 113,
+            "filename": "src/files/teste.rinha"
+          }
+        },
+        "location": {
+          "start": 96,
+          "end": 113,
+          "filename": "src/files/teste.rinha"
+        }
+      },
+      "location": {
+        "start": 90,
+        "end": 114,
+        "filename": "src/files/teste.rinha"
+      }
+    },
+    "location": { "start": 0, "end": 114, "filename": "src/files/teste.rinha" }
+  },
+  "location": { "start": 0, "end": 114, "filename": "src/files/teste.rinha" }
+}

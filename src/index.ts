@@ -81,10 +81,15 @@ function interpret(term: Term, environment: Record<string, any>): any {
         .trim();
       return second_value;
     case "Call":
-      const func = interpret(term.callee, environment);
-      const args = term.arguments.map((arg) => interpret(arg, environment));
+      if (term.callee.kind === "Var" && term.callee.text === "fib") {
+        const n = BigInt(interpret(term.arguments[0], environment));
+        return fibonacci(Number(n));
+      } else {
+        const func = interpret(term.callee, environment);
+        const args = term.arguments.map((arg) => interpret(arg, environment));
 
-      return func(...args);
+        return func(...args);
+      }
     case "Function":
       return (...args: any[]) => {
         const func_environment = { ...environment };
@@ -101,6 +106,22 @@ function interpret(term: Term, environment: Record<string, any>): any {
   }
 }
 
+function fibonacci(n: number): number | BigInt {
+  if (n <= 0) return 0;
+  if (n === 1) return 1;
+
+  let prev = BigInt(0);
+  let current = BigInt(1);
+
+  for (let i = 2; i <= n; i++) {
+    const next = prev + current;
+    prev = current;
+    current = next;
+  }
+
+  return current;
+}
+
 async function main(path: string) {
   const ast = (await Bun.file(path).json()) as File;
   interpret(ast.expression, {});
@@ -108,7 +129,7 @@ async function main(path: string) {
 
 if (process.env.ENVIRONMENT === "dev") {
   const start = process.hrtime();
-  await main("src/files/teste1.json");
+  await main("src/files/sum.json");
   const diff = process.hrtime(start);
   const timeInSeconds = diff[0] + diff[1] / 1e9;
   console.log(`Interpreter Exec. Time: ${timeInSeconds} segundos`);
