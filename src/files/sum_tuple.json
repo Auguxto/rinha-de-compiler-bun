@@ -1,0 +1,123 @@
+{
+  "name": "src/files/sum_tuple.rinha",
+  "expression": {
+    "kind": "Let",
+    "name": {
+      "text": "t1",
+      "location": {
+        "start": 4,
+        "end": 6,
+        "filename": "src/files/sum_tuple.rinha"
+      }
+    },
+    "value": {
+      "kind": "Tuple",
+      "first": {
+        "kind": "Int",
+        "value": 1,
+        "location": {
+          "start": 10,
+          "end": 11,
+          "filename": "src/files/sum_tuple.rinha"
+        }
+      },
+      "second": {
+        "kind": "Int",
+        "value": 2,
+        "location": {
+          "start": 12,
+          "end": 13,
+          "filename": "src/files/sum_tuple.rinha"
+        }
+      },
+      "location": {
+        "start": 9,
+        "end": 14,
+        "filename": "src/files/sum_tuple.rinha"
+      }
+    },
+    "next": {
+      "kind": "Let",
+      "name": {
+        "text": "t2",
+        "location": {
+          "start": 20,
+          "end": 22,
+          "filename": "src/files/sum_tuple.rinha"
+        }
+      },
+      "value": {
+        "kind": "Tuple",
+        "first": {
+          "kind": "Int",
+          "value": 1,
+          "location": {
+            "start": 26,
+            "end": 27,
+            "filename": "src/files/sum_tuple.rinha"
+          }
+        },
+        "second": {
+          "kind": "Int",
+          "value": 2,
+          "location": {
+            "start": 28,
+            "end": 29,
+            "filename": "src/files/sum_tuple.rinha"
+          }
+        },
+        "location": {
+          "start": 25,
+          "end": 30,
+          "filename": "src/files/sum_tuple.rinha"
+        }
+      },
+      "next": {
+        "kind": "Print",
+        "value": {
+          "kind": "Binary",
+          "lhs": {
+            "kind": "Var",
+            "text": "t1",
+            "location": {
+              "start": 38,
+              "end": 40,
+              "filename": "src/files/sum_tuple.rinha"
+            }
+          },
+          "op": "Add",
+          "rhs": {
+            "kind": "Var",
+            "text": "t2",
+            "location": {
+              "start": 43,
+              "end": 45,
+              "filename": "src/files/sum_tuple.rinha"
+            }
+          },
+          "location": {
+            "start": 38,
+            "end": 45,
+            "filename": "src/files/sum_tuple.rinha"
+          }
+        },
+        "location": {
+          "start": 32,
+          "end": 46,
+          "filename": "src/files/sum_tuple.rinha"
+        }
+      },
+      "location": {
+        "start": 16,
+        "end": 46,
+        "filename": "src/files/sum_tuple.rinha"
+      }
+    },
+    "location": {
+      "start": 0,
+      "end": 46,
+      "filename": "src/files/sum_tuple.rinha"
+    }
+  },
+  "location": { "start": 0, "end": 46, "filename": "src/files/sum_tuple.rinha" }
+}

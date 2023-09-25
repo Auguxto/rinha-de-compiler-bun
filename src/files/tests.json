@@ -1,0 +1,2451 @@
+{
+  "name": "src/files/tests.rinha",
+  "expression": {
+    "kind": "Let",
+    "name": {
+      "text": "_",
+      "location": { "start": 4, "end": 5, "filename": "src/files/tests.rinha" }
+    },
+    "value": {
+      "kind": "Print",
+      "value": {
+        "kind": "Binary",
+        "lhs": {
+          "kind": "Str",
+          "value": "1 + 2 = ",
+          "location": {
+            "start": 14,
+            "end": 24,
+            "filename": "src/files/tests.rinha"
+          }
+        },
+        "op": "Add",
+        "rhs": {
+          "kind": "Binary",
+          "lhs": {
+            "kind": "Int",
+            "value": 1,
+            "location": {
+              "start": 27,
+              "end": 28,
+              "filename": "src/files/tests.rinha"
+            }
+          },
+          "op": "Add",
+          "rhs": {
+            "kind": "Int",
+            "value": 2,
+            "location": {
+              "start": 31,
+              "end": 32,
+              "filename": "src/files/tests.rinha"
+            }
+          },
+          "location": {
+            "start": 27,
+            "end": 32,
+            "filename": "src/files/tests.rinha"
+          }
+        },
+        "location": {
+          "start": 14,
+          "end": 32,
+          "filename": "src/files/tests.rinha"
+        }
+      },
+      "location": { "start": 8, "end": 33, "filename": "src/files/tests.rinha" }
+    },
+    "next": {
+      "kind": "Let",
+      "name": {
+        "text": "_",
+        "location": {
+          "start": 39,
+          "end": 40,
+          "filename": "src/files/tests.rinha"
+        }
+      },
+      "value": {
+        "kind": "Print",
+        "value": {
+          "kind": "Binary",
+          "lhs": {
+            "kind": "Str",
+            "value": "2 * 2 = ",
+            "location": {
+              "start": 49,
+              "end": 59,
+              "filename": "src/files/tests.rinha"
+            }
+          },
+          "op": "Add",
+          "rhs": {
+            "kind": "Binary",
+            "lhs": {
+              "kind": "Int",
+              "value": 2,
+              "location": {
+                "start": 62,
+                "end": 63,
+                "filename": "src/files/tests.rinha"
+              }
+            },
+            "op": "Mul",
+            "rhs": {
+              "kind": "Int",
+              "value": 2,
+              "location": {
+                "start": 66,
+                "end": 67,
+                "filename": "src/files/tests.rinha"
+              }
+            },
+            "location": {
+              "start": 62,
+              "end": 67,
+              "filename": "src/files/tests.rinha"
+            }
+          },
+          "location": {
+            "start": 49,
+            "end": 67,
+            "filename": "src/files/tests.rinha"
+          }
+        },
+        "location": {
+          "start": 43,
+          "end": 68,
+          "filename": "src/files/tests.rinha"
+        }
+      },
+      "next": {
+        "kind": "Let",
+        "name": {
+          "text": "_",
+          "location": {
+            "start": 74,
+            "end": 75,
+            "filename": "src/files/tests.rinha"
+          }
+        },
+        "value": {
+          "kind": "Print",
+          "value": {
+            "kind": "Binary",
+            "lhs": {
+              "kind": "Str",
+              "value": "3 / 2 = ",
+              "location": {
+                "start": 84,
+                "end": 94,
+                "filename": "src/files/tests.rinha"
+              }
+            },
+            "op": "Add",
+            "rhs": {
+              "kind": "Binary",
+              "lhs": {
+                "kind": "Int",
+                "value": 3,
+                "location": {
+                  "start": 97,
+                  "end": 98,
+                  "filename": "src/files/tests.rinha"
+                }
+              },
+              "op": "Div",
+              "rhs": {
+                "kind": "Int",
+                "value": 2,
+                "location": {
+                  "start": 101,
+                  "end": 102,
+                  "filename": "src/files/tests.rinha"
+                }
+              },
+              "location": {
+                "start": 97,
+                "end": 102,
+                "filename": "src/files/tests.rinha"
+              }
+            },
+            "location": {
+              "start": 84,
+              "end": 102,
+              "filename": "src/files/tests.rinha"
+            }
+          },
+          "location": {
+            "start": 78,
+            "end": 103,
+            "filename": "src/files/tests.rinha"
+          }
+        },
+        "next": {
+          "kind": "Let",
+          "name": {
+            "text": "_",
+            "location": {
+              "start": 109,
+              "end": 110,
+              "filename": "src/files/tests.rinha"
+            }
+          },
+          "value": {
+            "kind": "Print",
+            "value": {
+              "kind": "Binary",
+              "lhs": {
+                "kind": "Binary",
+                "lhs": {
+                  "kind": "Str",
+                  "value": "3 != 1 + 1 = ",
+                  "location": {
+                    "start": 119,
+                    "end": 134,
+                    "filename": "src/files/tests.rinha"
+                  }
+                },
+                "op": "Add",
+                "rhs": {
+                  "kind": "Int",
+                  "value": 3,
+                  "location": {
+                    "start": 137,
+                    "end": 138,
+                    "filename": "src/files/tests.rinha"
+                  }
+                },
+                "location": {
+                  "start": 119,
+                  "end": 138,
+                  "filename": "src/files/tests.rinha"
+                }
+              },
+              "op": "Neq",
+              "rhs": {
+                "kind": "Binary",
+                "lhs": {
+                  "kind": "Int",
+                  "value": 1,
+                  "location": {
+                    "start": 142,
+                    "end": 143,
+                    "filename": "src/files/tests.rinha"
+                  }
+                },
+                "op": "Add",
+                "rhs": {
+                  "kind": "Int",
+                  "value": 1,
+                  "location": {
+                    "start": 146,
+                    "end": 147,
+                    "filename": "src/files/tests.rinha"
+                  }
+                },
+                "location": {
+                  "start": 142,
+                  "end": 147,
+                  "filename": "src/files/tests.rinha"
+                }
+              },
+              "location": {
+                "start": 119,
+                "end": 147,
+                "filename": "src/files/tests.rinha"
+              }
+            },
+            "location": {
+              "start": 113,
+              "end": 148,
+              "filename": "src/files/tests.rinha"
+            }
+          },
+          "next": {
+            "kind": "Let",
+            "name": {
+              "text": "_",
+              "location": {
+                "start": 154,
+                "end": 155,
+                "filename": "src/files/tests.rinha"
+              }
+            },
+            "value": {
+              "kind": "Print",
+              "value": {
+                "kind": "Binary",
+                "lhs": {
+                  "kind": "Int",
+                  "value": 1,
+                  "location": {
+                    "start": 164,
+                    "end": 165,
+                    "filename": "src/files/tests.rinha"
+                  }
+                },
+                "op": "Lte",
+                "rhs": {
+                  "kind": "Int",
+                  "value": 2,
+                  "location": {
+                    "start": 169,
+                    "end": 170,
+                    "filename": "src/files/tests.rinha"
+                  }
+                },
+                "location": {
+                  "start": 164,
+                  "end": 170,
+                  "filename": "src/files/tests.rinha"
+                }
+              },
+              "location": {
+                "start": 158,
+                "end": 171,
+                "filename": "src/files/tests.rinha"
+              }
+            },
+            "next": {
+              "kind": "Let",
+              "name": {
+                "text": "_",
+                "location": {
+                  "start": 177,
+                  "end": 178,
+                  "filename": "src/files/tests.rinha"
+                }
+              },
+              "value": {
+                "kind": "Print",
+                "value": {
+                  "kind": "Binary",
+                  "lhs": {
+                    "kind": "Int",
+                    "value": 1,
+                    "location": {
+                      "start": 187,
+                      "end": 188,
+                      "filename": "src/files/tests.rinha"
+                    }
+                  },
+                  "op": "Gte",
+                  "rhs": {
+                    "kind": "Int",
+                    "value": 2,
+                    "location": {
+                      "start": 192,
+                      "end": 193,
+                      "filename": "src/files/tests.rinha"
+                    }
+                  },
+                  "location": {
+                    "start": 187,
+                    "end": 193,
+                    "filename": "src/files/tests.rinha"
+                  }
+                },
+                "location": {
+                  "start": 181,
+                  "end": 194,
+                  "filename": "src/files/tests.rinha"
+                }
+              },
+              "next": {
+                "kind": "Let",
+                "name": {
+                  "text": "_",
+                  "location": {
+                    "start": 200,
+                    "end": 201,
+                    "filename": "src/files/tests.rinha"
+                  }
+                },
+                "value": {
+                  "kind": "Print",
+                  "value": {
+                    "kind": "Binary",
+                    "lhs": {
+                      "kind": "Int",
+                      "value": 1,
+                      "location": {
+                        "start": 210,
+                        "end": 211,
+                        "filename": "src/files/tests.rinha"
+                      }
+                    },
+                    "op": "Gt",
+                    "rhs": {
+                      "kind": "Int",
+                      "value": 2,
+                      "location": {
+                        "start": 214,
+                        "end": 215,
+                        "filename": "src/files/tests.rinha"
+                      }
+                    },
+                    "location": {
+                      "start": 210,
+                      "end": 215,
+                      "filename": "src/files/tests.rinha"
+                    }
+                  },
+                  "location": {
+                    "start": 204,
+                    "end": 216,
+                    "filename": "src/files/tests.rinha"
+                  }
+                },
+                "next": {
+                  "kind": "Let",
+                  "name": {
+                    "text": "_",
+                    "location": {
+                      "start": 222,
+                      "end": 223,
+                      "filename": "src/files/tests.rinha"
+                    }
+                  },
+                  "value": {
+                    "kind": "Print",
+                    "value": {
+                      "kind": "Binary",
+                      "lhs": {
+                        "kind": "Bool",
+                        "value": true,
+                        "location": {
+                          "start": 232,
+                          "end": 236,
+                          "filename": "src/files/tests.rinha"
+                        }
+                      },
+                      "op": "And",
+                      "rhs": {
+                        "kind": "Bool",
+                        "value": false,
+                        "location": {
+                          "start": 240,
+                          "end": 245,
+                          "filename": "src/files/tests.rinha"
+                        }
+                      },
+                      "location": {
+                        "start": 232,
+                        "end": 245,
+                        "filename": "src/files/tests.rinha"
+                      }
+                    },
+                    "location": {
+                      "start": 226,
+                      "end": 246,
+                      "filename": "src/files/tests.rinha"
+                    }
+                  },
+                  "next": {
+                    "kind": "Let",
+                    "name": {
+                      "text": "_",
+                      "location": {
+                        "start": 252,
+                        "end": 253,
+                        "filename": "src/files/tests.rinha"
+                      }
+                    },
+                    "value": {
+                      "kind": "Print",
+                      "value": {
+                        "kind": "Binary",
+                        "lhs": {
+                          "kind": "Bool",
+                          "value": true,
+                          "location": {
+                            "start": 262,
+                            "end": 266,
+                            "filename": "src/files/tests.rinha"
+                          }
+                        },
+                        "op": "Or",
+                        "rhs": {
+                          "kind": "Bool",
+                          "value": false,
+                          "location": {
+                            "start": 270,
+                            "end": 275,
+                            "filename": "src/files/tests.rinha"
+                          }
+                        },
+                        "location": {
+                          "start": 262,
+                          "end": 275,
+                          "filename": "src/files/tests.rinha"
+                        }
+                      },
+                      "location": {
+                        "start": 256,
+                        "end": 276,
+                        "filename": "src/files/tests.rinha"
+                      }
+                    },
+                    "next": {
+                      "kind": "Let",
+                      "name": {
+                        "text": "_",
+                        "location": {
+                          "start": 282,
+                          "end": 283,
+                          "filename": "src/files/tests.rinha"
+                        }
+                      },
+                      "value": {
+                        "kind": "Print",
+                        "value": {
+                          "kind": "Binary",
+                          "lhs": {
+                            "kind": "Str",
+                            "value": "4 % 2 = ",
+                            "location": {
+                              "start": 292,
+                              "end": 302,
+                              "filename": "src/files/tests.rinha"
+                            }
+                          },
+                          "op": "Add",
+                          "rhs": {
+                            "kind": "Binary",
+                            "lhs": {
+                              "kind": "Int",
+                              "value": 4,
+                              "location": {
+                                "start": 305,
+                                "end": 306,
+                                "filename": "src/files/tests.rinha"
+                              }
+                            },
+                            "op": "Rem",
+                            "rhs": {
+                              "kind": "Int",
+                              "value": 2,
+                              "location": {
+                                "start": 309,
+                                "end": 310,
+                                "filename": "src/files/tests.rinha"
+                              }
+                            },
+                            "location": {
+                              "start": 305,
+                              "end": 310,
+                              "filename": "src/files/tests.rinha"
+                            }
+                          },
+                          "location": {
+                            "start": 292,
+                            "end": 310,
+                            "filename": "src/files/tests.rinha"
+                          }
+                        },
+                        "location": {
+                          "start": 286,
+                          "end": 311,
+                          "filename": "src/files/tests.rinha"
+                        }
+                      },
+                      "next": {
+                        "kind": "Let",
+                        "name": {
+                          "text": "_",
+                          "location": {
+                            "start": 317,
+                            "end": 318,
+                            "filename": "src/files/tests.rinha"
+                          }
+                        },
+                        "value": {
+                          "kind": "Print",
+                          "value": {
+                            "kind": "Tuple",
+                            "first": {
+                              "kind": "Str",
+                              "value": "Leandro",
+                              "location": {
+                                "start": 328,
+                                "end": 337,
+                                "filename": "src/files/tests.rinha"
+                              }
+                            },
+                            "second": {
+                              "kind": "Int",
+                              "value": 42,
+                              "location": {
+                                "start": 339,
+                                "end": 341,
+                                "filename": "src/files/tests.rinha"
+                              }
+                            },
+                            "location": {
+                              "start": 327,
+                              "end": 342,
+                              "filename": "src/files/tests.rinha"
+                            }
+                          },
+                          "location": {
+                            "start": 321,
+                            "end": 343,
+                            "filename": "src/files/tests.rinha"
+                          }
+                        },
+                        "next": {
+                          "kind": "Let",
+                          "name": {
+                            "text": "_",
+                            "location": {
+                              "start": 349,
+                              "end": 350,
+                              "filename": "src/files/tests.rinha"
+                            }
+                          },
+                          "value": {
+                            "kind": "Print",
+                            "value": {
+                              "kind": "First",
+                              "value": {
+                                "kind": "Tuple",
+                                "first": {
+                                  "kind": "Str",
+                                  "value": "Leandro",
+                                  "location": {
+                                    "start": 366,
+                                    "end": 375,
+                                    "filename": "src/files/tests.rinha"
+                                  }
+                                },
+                                "second": {
+                                  "kind": "Int",
+                                  "value": 42,
+                                  "location": {
+                                    "start": 377,
+                                    "end": 379,
+                                    "filename": "src/files/tests.rinha"
+                                  }
+                                },
+                                "location": {
+                                  "start": 365,
+                                  "end": 380,
+                                  "filename": "src/files/tests.rinha"
+                                }
+                              },
+                              "location": {
+                                "start": 359,
+                                "end": 381,
+                                "filename": "src/files/tests.rinha"
+                              }
+                            },
+                            "location": {
+                              "start": 353,
+                              "end": 382,
+                              "filename": "src/files/tests.rinha"
+                            }
+                          },
+                          "next": {
+                            "kind": "Let",
+                            "name": {
+                              "text": "_",
+                              "location": {
+                                "start": 388,
+                                "end": 389,
+                                "filename": "src/files/tests.rinha"
+                              }
+                            },
+                            "value": {
+                              "kind": "Print",
+                              "value": {
+                                "kind": "Str",
+                                "value": "Done with basics. Doing something more complex...",
+                                "location": {
+                                  "start": 398,
+                                  "end": 449,
+                                  "filename": "src/files/tests.rinha"
+                                }
+                              },
+                              "location": {
+                                "start": 392,
+                                "end": 450,
+                                "filename": "src/files/tests.rinha"
+                              }
+                            },
+                            "next": {
+                              "kind": "Let",
+                              "name": {
+                                "text": "_",
+                                "location": {
+                                  "start": 456,
+                                  "end": 457,
+                                  "filename": "src/files/tests.rinha"
+                                }
+                              },
+                              "value": {
+                                "kind": "Print",
+                                "value": {
+                                  "kind": "Str",
+                                  "value": "#########################",
+                                  "location": {
+                                    "start": 466,
+                                    "end": 493,
+                                    "filename": "src/files/tests.rinha"
+                                  }
+                                },
+                                "location": {
+                                  "start": 460,
+                                  "end": 494,
+                                  "filename": "src/files/tests.rinha"
+                                }
+                              },
+                              "next": {
+                                "kind": "Let",
+                                "name": {
+                                  "text": "sum",
+                                  "location": {
+                                    "start": 500,
+                                    "end": 503,
+                                    "filename": "src/files/tests.rinha"
+                                  }
+                                },
+                                "value": {
+                                  "kind": "Function",
+                                  "parameters": [
+                                    {
+                                      "text": "a",
+                                      "location": {
+                                        "start": 509,
+                                        "end": 510,
+                                        "filename": "src/files/tests.rinha"
+                                      }
+                                    },
+                                    {
+                                      "text": "b",
+                                      "location": {
+                                        "start": 512,
+                                        "end": 513,
+                                        "filename": "src/files/tests.rinha"
+                                      }
+                                    }
+                                  ],
+                                  "value": {
+                                    "kind": "Binary",
+                                    "lhs": {
+                                      "kind": "Var",
+                                      "text": "a",
+                                      "location": {
+                                        "start": 520,
+                                        "end": 521,
+                                        "filename": "src/files/tests.rinha"
+                                      }
+                                    },
+                                    "op": "Add",
+                                    "rhs": {
+                                      "kind": "Var",
+                                      "text": "b",
+                                      "location": {
+                                        "start": 524,
+                                        "end": 525,
+                                        "filename": "src/files/tests.rinha"
+                                      }
+                                    },
+                                    "location": {
+                                      "start": 520,
+                                      "end": 525,
+                                      "filename": "src/files/tests.rinha"
+                                    }
+                                  },
+                                  "location": {
+                                    "start": 506,
+                                    "end": 527,
+                                    "filename": "src/files/tests.rinha"
+                                  }
+                                },
+                                "next": {
+                                  "kind": "Let",
+                                  "name": {
+                                    "text": "_",
+                                    "location": {
+                                      "start": 533,
+                                      "end": 534,
+                                      "filename": "src/files/tests.rinha"
+                                    }
+                                  },
+                                  "value": {
+                                    "kind": "Print",
+                                    "value": {
+                                      "kind": "Binary",
+                                      "lhs": {
+                                        "kind": "Str",
+                                        "value": "Just printing the closure 'sum': ",
+                                        "location": {
+                                          "start": 543,
+                                          "end": 578,
+                                          "filename": "src/files/tests.rinha"
+                                        }
+                                      },
+                                      "op": "Add",
+                                      "rhs": {
+                                        "kind": "Var",
+                                        "text": "sum",
+                                        "location": {
+                                          "start": 581,
+                                          "end": 584,
+                                          "filename": "src/files/tests.rinha"
+                                        }
+                                      },
+                                      "location": {
+                                        "start": 543,
+                                        "end": 584,
+                                        "filename": "src/files/tests.rinha"
+                                      }
+                                    },
+                                    "location": {
+                                      "start": 537,
+                                      "end": 585,
+                                      "filename": "src/files/tests.rinha"
+                                    }
+                                  },
+                                  "next": {
+                                    "kind": "Let",
+                                    "name": {
+                                      "text": "_",
+                                      "location": {
+                                        "start": 591,
+                                        "end": 592,
+                                        "filename": "src/files/tests.rinha"
+                                      }
+                                    },
+                                    "value": {
+                                      "kind": "Print",
+                                      "value": {
+                                        "kind": "Binary",
+                                        "lhs": {
+                                          "kind": "Str",
+                                          "value": "sum(40, 2) = ",
+                                          "location": {
+                                            "start": 601,
+                                            "end": 616,
+                                            "filename": "src/files/tests.rinha"
+                                          }
+                                        },
+                                        "op": "Add",
+                                        "rhs": {
+                                          "kind": "Call",
+                                          "callee": {
+                                            "kind": "Var",
+                                            "text": "sum",
+                                            "location": {
+                                              "start": 619,
+                                              "end": 622,
+                                              "filename": "src/files/tests.rinha"
+                                            }
+                                          },
+                                          "arguments": [
+                                            {
+                                              "kind": "Int",
+                                              "value": 40,
+                                              "location": {
+                                                "start": 623,
+                                                "end": 625,
+                                                "filename": "src/files/tests.rinha"
+                                              }
+                                            },
+                                            {
+                                              "kind": "Int",
+                                              "value": 2,
+                                              "location": {
+                                                "start": 627,
+                                                "end": 628,
+                                                "filename": "src/files/tests.rinha"
+                                              }
+                                            }
+                                          ],
+                                          "location": {
+                                            "start": 619,
+                                            "end": 629,
+                                            "filename": "src/files/tests.rinha"
+                                          }
+                                        },
+                                        "location": {
+                                          "start": 601,
+                                          "end": 629,
+                                          "filename": "src/files/tests.rinha"
+                                        }
+                                      },
+                                      "location": {
+                                        "start": 595,
+                                        "end": 630,
+                                        "filename": "src/files/tests.rinha"
+                                      }
+                                    },
+                                    "next": {
+                                      "kind": "Let",
+                                      "name": {
+                                        "text": "_",
+                                        "location": {
+                                          "start": 636,
+                                          "end": 637,
+                                          "filename": "src/files/tests.rinha"
+                                        }
+                                      },
+                                      "value": {
+                                        "kind": "Print",
+                                        "value": {
+                                          "kind": "If",
+                                          "condition": {
+                                            "kind": "Bool",
+                                            "value": true,
+                                            "location": {
+                                              "start": 650,
+                                              "end": 654,
+                                              "filename": "src/files/tests.rinha"
+                                            }
+                                          },
+                                          "then": {
+                                            "kind": "Str",
+                                            "value": "eh verdade",
+                                            "location": {
+                                              "start": 658,
+                                              "end": 670,
+                                              "filename": "src/files/tests.rinha"
+                                            }
+                                          },
+                                          "otherwise": {
+                                            "kind": "Str",
+                                            "value": "eh mentira ",
+                                            "location": {
+                                              "start": 680,
+                                              "end": 693,
+                                              "filename": "src/files/tests.rinha"
+                                            }
+                                          },
+                                          "location": {
+                                            "start": 646,
+                                            "end": 694,
+                                            "filename": "src/files/tests.rinha"
+                                          }
+                                        },
+                                        "location": {
+                                          "start": 640,
+                                          "end": 695,
+                                          "filename": "src/files/tests.rinha"
+                                        }
+                                      },
+                                      "next": {
+                                        "kind": "Let",
+                                        "name": {
+                                          "text": "_",
+                                          "location": {
+                                            "start": 701,
+                                            "end": 702,
+                                            "filename": "src/files/tests.rinha"
+                                          }
+                                        },
+                                        "value": {
+                                          "kind": "Print",
+                                          "value": {
+                                            "kind": "Print",
+                                            "value": {
+                                              "kind": "Str",
+                                              "value": "Nested print",
+                                              "location": {
+                                                "start": 717,
+                                                "end": 731,
+                                                "filename": "src/files/tests.rinha"
+                                              }
+                                            },
+                                            "location": {
+                                              "start": 711,
+                                              "end": 732,
+                                              "filename": "src/files/tests.rinha"
+                                            }
+                                          },
+                                          "location": {
+                                            "start": 705,
+                                            "end": 733,
+                                            "filename": "src/files/tests.rinha"
+                                          }
+                                        },
+                                        "next": {
+                                          "kind": "Let",
+                                          "name": {
+                                            "text": "other_sum",
+                                            "location": {
+                                              "start": 739,
+                                              "end": 748,
+                                              "filename": "src/files/tests.rinha"
+                                            }
+                                          },
+                                          "value": {
+                                            "kind": "Function",
+                                            "parameters": [
+                                              {
+                                                "text": "n",
+                                                "location": {
+                                                  "start": 755,
+                                                  "end": 756,
+                                                  "filename": "src/files/tests.rinha"
+                                                }
+                                              }
+                                            ],
+                                            "value": {
+                                              "kind": "Call",
+                                              "callee": {
+                                                "kind": "Var",
+                                                "text": "sum",
+                                                "location": {
+                                                  "start": 763,
+                                                  "end": 766,
+                                                  "filename": "src/files/tests.rinha"
+                                                }
+                                              },
+                                              "arguments": [
+                                                {
+                                                  "kind": "Var",
+                                                  "text": "n",
+                                                  "location": {
+                                                    "start": 767,
+                                                    "end": 768,
+                                                    "filename": "src/files/tests.rinha"
+                                                  }
+                                                },
+                                                {
+                                                  "kind": "Int",
+                                                  "value": 2,
+                                                  "location": {
+                                                    "start": 770,
+                                                    "end": 771,
+                                                    "filename": "src/files/tests.rinha"
+                                                  }
+                                                }
+                                              ],
+                                              "location": {
+                                                "start": 763,
+                                                "end": 772,
+                                                "filename": "src/files/tests.rinha"
+                                              }
+                                            },
+                                            "location": {
+                                              "start": 751,
+                                              "end": 774,
+                                              "filename": "src/files/tests.rinha"
+                                            }
+                                          },
+                                          "next": {
+                                            "kind": "Let",
+                                            "name": {
+                                              "text": "_",
+                                              "location": {
+                                                "start": 780,
+                                                "end": 781,
+                                                "filename": "src/files/tests.rinha"
+                                              }
+                                            },
+                                            "value": {
+                                              "kind": "Print",
+                                              "value": {
+                                                "kind": "Tuple",
+                                                "first": {
+                                                  "kind": "Print",
+                                                  "value": {
+                                                    "kind": "Binary",
+                                                    "lhs": {
+                                                      "kind": "Str",
+                                                      "value": "Other sum e tuplas: ",
+                                                      "location": {
+                                                        "start": 802,
+                                                        "end": 824,
+                                                        "filename": "src/files/tests.rinha"
+                                                      }
+                                                    },
+                                                    "op": "Add",
+                                                    "rhs": {
+                                                      "kind": "Call",
+                                                      "callee": {
+                                                        "kind": "Var",
+                                                        "text": "other_sum",
+                                                        "location": {
+                                                          "start": 827,
+                                                          "end": 836,
+                                                          "filename": "src/files/tests.rinha"
+                                                        }
+                                                      },
+                                                      "arguments": [
+                                                        {
+                                                          "kind": "Int",
+                                                          "value": 10,
+                                                          "location": {
+                                                            "start": 837,
+                                                            "end": 839,
+                                                            "filename": "src/files/tests.rinha"
+                                                          }
+                                                        }
+                                                      ],
+                                                      "location": {
+                                                        "start": 827,
+                                                        "end": 840,
+                                                        "filename": "src/files/tests.rinha"
+                                                      }
+                                                    },
+                                                    "location": {
+                                                      "start": 802,
+                                                      "end": 840,
+                                                      "filename": "src/files/tests.rinha"
+                                                    }
+                                                  },
+                                                  "location": {
+                                                    "start": 796,
+                                                    "end": 841,
+                                                    "filename": "src/files/tests.rinha"
+                                                  }
+                                                },
+                                                "second": {
+                                                  "kind": "Call",
+                                                  "callee": {
+                                                    "kind": "Function",
+                                                    "parameters": [
+                                                      {
+                                                        "text": "a",
+                                                        "location": {
+                                                          "start": 853,
+                                                          "end": 854,
+                                                          "filename": "src/files/tests.rinha"
+                                                        }
+                                                      },
+                                                      {
+                                                        "text": "b",
+                                                        "location": {
+                                                          "start": 856,
+                                                          "end": 857,
+                                                          "filename": "src/files/tests.rinha"
+                                                        }
+                                                      }
+                                                    ],
+                                                    "value": {
+                                                      "kind": "Binary",
+                                                      "lhs": {
+                                                        "kind": "Var",
+                                                        "text": "a",
+                                                        "location": {
+                                                          "start": 864,
+                                                          "end": 865,
+                                                          "filename": "src/files/tests.rinha"
+                                                        }
+                                                      },
+                                                      "op": "Sub",
+                                                      "rhs": {
+                                                        "kind": "Var",
+                                                        "text": "b",
+                                                        "location": {
+                                                          "start": 868,
+                                                          "end": 869,
+                                                          "filename": "src/files/tests.rinha"
+                                                        }
+                                                      },
+                                                      "location": {
+                                                        "start": 864,
+                                                        "end": 869,
+                                                        "filename": "src/files/tests.rinha"
+                                                      }
+                                                    },
+                                                    "location": {
+                                                      "start": 849,
+                                                      "end": 871,
+                                                      "filename": "src/files/tests.rinha"
+                                                    }
+                                                  },
+                                                  "arguments": [
+                                                    {
+                                                      "kind": "Int",
+                                                      "value": 10,
+                                                      "location": {
+                                                        "start": 873,
+                                                        "end": 875,
+                                                        "filename": "src/files/tests.rinha"
+                                                      }
+                                                    },
+                                                    {
+                                                      "kind": "Int",
+                                                      "value": 2,
+                                                      "location": {
+                                                        "start": 877,
+                                                        "end": 878,
+                                                        "filename": "src/files/tests.rinha"
+                                                      }
+                                                    }
+                                                  ],
+                                                  "location": {
+                                                    "start": 848,
+                                                    "end": 879,
+                                                    "filename": "src/files/tests.rinha"
+                                                  }
+                                                },
+                                                "location": {
+                                                  "start": 790,
+                                                  "end": 881,
+                                                  "filename": "src/files/tests.rinha"
+                                                }
+                                              },
+                                              "location": {
+                                                "start": 784,
+                                                "end": 882,
+                                                "filename": "src/files/tests.rinha"
+                                              }
+                                            },
+                                            "next": {
+                                              "kind": "Let",
+                                              "name": {
+                                                "text": "rsum",
+                                                "location": {
+                                                  "start": 888,
+                                                  "end": 892,
+                                                  "filename": "src/files/tests.rinha"
+                                                }
+                                              },
+                                              "value": {
+                                                "kind": "Function",
+                                                "parameters": [
+                                                  {
+                                                    "text": "n",
+                                                    "location": {
+                                                      "start": 899,
+                                                      "end": 900,
+                                                      "filename": "src/files/tests.rinha"
+                                                    }
+                                                  }
+                                                ],
+                                                "value": {
+                                                  "kind": "If",
+                                                  "condition": {
+                                                    "kind": "Binary",
+                                                    "lhs": {
+                                                      "kind": "Var",
+                                                      "text": "n",
+                                                      "location": {
+                                                        "start": 913,
+                                                        "end": 914,
+                                                        "filename": "src/files/tests.rinha"
+                                                      }
+                                                    },
+                                                    "op": "Eq",
+                                                    "rhs": {
+                                                      "kind": "Int",
+                                                      "value": 1,
+                                                      "location": {
+                                                        "start": 918,
+                                                        "end": 919,
+                                                        "filename": "src/files/tests.rinha"
+                                                      }
+                                                    },
+                                                    "location": {
+                                                      "start": 913,
+                                                      "end": 919,
+                                                      "filename": "src/files/tests.rinha"
+                                                    }
+                                                  },
+                                                  "then": {
+                                                    "kind": "Var",
+                                                    "text": "n",
+                                                    "location": {
+                                                      "start": 927,
+                                                      "end": 928,
+                                                      "filename": "src/files/tests.rinha"
+                                                    }
+                                                  },
+                                                  "otherwise": {
+                                                    "kind": "Binary",
+                                                    "lhs": {
+                                                      "kind": "Var",
+                                                      "text": "n",
+                                                      "location": {
+                                                        "start": 944,
+                                                        "end": 945,
+                                                        "filename": "src/files/tests.rinha"
+                                                      }
+                                                    },
+                                                    "op": "Add",
+                                                    "rhs": {
+                                                      "kind": "Call",
+                                                      "callee": {
+                                                        "kind": "Var",
+                                                        "text": "rsum",
+                                                        "location": {
+                                                          "start": 948,
+                                                          "end": 952,
+                                                          "filename": "src/files/tests.rinha"
+                                                        }
+                                                      },
+                                                      "arguments": [
+                                                        {
+                                                          "kind": "Binary",
+                                                          "lhs": {
+                                                            "kind": "Var",
+                                                            "text": "n",
+                                                            "location": {
+                                                              "start": 953,
+                                                              "end": 954,
+                                                              "filename": "src/files/tests.rinha"
+                                                            }
+                                                          },
+                                                          "op": "Sub",
+                                                          "rhs": {
+                                                            "kind": "Int",
+                                                            "value": 1,
+                                                            "location": {
+                                                              "start": 957,
+                                                              "end": 958,
+                                                              "filename": "src/files/tests.rinha"
+                                                            }
+                                                          },
+                                                          "location": {
+                                                            "start": 953,
+                                                            "end": 958,
+                                                            "filename": "src/files/tests.rinha"
+                                                          }
+                                                        }
+                                                      ],
+                                                      "location": {
+                                                        "start": 948,
+                                                        "end": 959,
+                                                        "filename": "src/files/tests.rinha"
+                                                      }
+                                                    },
+                                                    "location": {
+                                                      "start": 944,
+                                                      "end": 959,
+                                                      "filename": "src/files/tests.rinha"
+                                                    }
+                                                  },
+                                                  "location": {
+                                                    "start": 909,
+                                                    "end": 963,
+                                                    "filename": "src/files/tests.rinha"
+                                                  }
+                                                },
+                                                "location": {
+                                                  "start": 895,
+                                                  "end": 965,
+                                                  "filename": "src/files/tests.rinha"
+                                                }
+                                              },
+                                              "next": {
+                                                "kind": "Let",
+                                                "name": {
+                                                  "text": "_",
+                                                  "location": {
+                                                    "start": 971,
+                                                    "end": 972,
+                                                    "filename": "src/files/tests.rinha"
+                                                  }
+                                                },
+                                                "value": {
+                                                  "kind": "Print",
+                                                  "value": {
+                                                    "kind": "Binary",
+                                                    "lhs": {
+                                                      "kind": "Str",
+                                                      "value": "rsum(5) = ",
+                                                      "location": {
+                                                        "start": 981,
+                                                        "end": 993,
+                                                        "filename": "src/files/tests.rinha"
+                                                      }
+                                                    },
+                                                    "op": "Add",
+                                                    "rhs": {
+                                                      "kind": "Call",
+                                                      "callee": {
+                                                        "kind": "Var",
+                                                        "text": "rsum",
+                                                        "location": {
+                                                          "start": 996,
+                                                          "end": 1000,
+                                                          "filename": "src/files/tests.rinha"
+                                                        }
+                                                      },
+                                                      "arguments": [
+                                                        {
+                                                          "kind": "Int",
+                                                          "value": 5,
+                                                          "location": {
+                                                            "start": 1001,
+                                                            "end": 1002,
+                                                            "filename": "src/files/tests.rinha"
+                                                          }
+                                                        }
+                                                      ],
+                                                      "location": {
+                                                        "start": 996,
+                                                        "end": 1003,
+                                                        "filename": "src/files/tests.rinha"
+                                                      }
+                                                    },
+                                                    "location": {
+                                                      "start": 981,
+                                                      "end": 1003,
+                                                      "filename": "src/files/tests.rinha"
+                                                    }
+                                                  },
+                                                  "location": {
+                                                    "start": 975,
+                                                    "end": 1004,
+                                                    "filename": "src/files/tests.rinha"
+                                                  }
+                                                },
+                                                "next": {
+                                                  "kind": "Let",
+                                                  "name": {
+                                                    "text": "combination",
+                                                    "location": {
+                                                      "start": 1010,
+                                                      "end": 1021,
+                                                      "filename": "src/files/tests.rinha"
+                                                    }
+                                                  },
+                                                  "value": {
+                                                    "kind": "Function",
+                                                    "parameters": [
+                                                      {
+                                                        "text": "n",
+                                                        "location": {
+                                                          "start": 1028,
+                                                          "end": 1029,
+                                                          "filename": "src/files/tests.rinha"
+                                                        }
+                                                      },
+                                                      {
+                                                        "text": "k",
+                                                        "location": {
+                                                          "start": 1031,
+                                                          "end": 1032,
+                                                          "filename": "src/files/tests.rinha"
+                                                        }
+                                                      }
+                                                    ],
+                                                    "value": {
+                                                      "kind": "Let",
+                                                      "name": {
+                                                        "text": "a",
+                                                        "location": {
+                                                          "start": 1047,
+                                                          "end": 1048,
+                                                          "filename": "src/files/tests.rinha"
+                                                        }
+                                                      },
+                                                      "value": {
+                                                        "kind": "Binary",
+                                                        "lhs": {
+                                                          "kind": "Var",
+                                                          "text": "k",
+                                                          "location": {
+                                                            "start": 1051,
+                                                            "end": 1052,
+                                                            "filename": "src/files/tests.rinha"
+                                                          }
+                                                        },
+                                                        "op": "Eq",
+                                                        "rhs": {
+                                                          "kind": "Int",
+                                                          "value": 0,
+                                                          "location": {
+                                                            "start": 1056,
+                                                            "end": 1057,
+                                                            "filename": "src/files/tests.rinha"
+                                                          }
+                                                        },
+                                                        "location": {
+                                                          "start": 1051,
+                                                          "end": 1057,
+                                                          "filename": "src/files/tests.rinha"
+                                                        }
+                                                      },
+                                                      "next": {
+                                                        "kind": "Let",
+                                                        "name": {
+                                                          "text": "b",
+                                                          "location": {
+                                                            "start": 1067,
+                                                            "end": 1068,
+                                                            "filename": "src/files/tests.rinha"
+                                                          }
+                                                        },
+                                                        "value": {
+                                                          "kind": "Binary",
+                                                          "lhs": {
+                                                            "kind": "Var",
+                                                            "text": "k",
+                                                            "location": {
+                                                              "start": 1071,
+                                                              "end": 1072,
+                                                              "filename": "src/files/tests.rinha"
+                                                            }
+                                                          },
+                                                          "op": "Eq",
+                                                          "rhs": {
+                                                            "kind": "Var",
+                                                            "text": "n",
+                                                            "location": {
+                                                              "start": 1076,
+                                                              "end": 1077,
+                                                              "filename": "src/files/tests.rinha"
+                                                            }
+                                                          },
+                                                          "location": {
+                                                            "start": 1071,
+                                                            "end": 1077,
+                                                            "filename": "src/files/tests.rinha"
+                                                          }
+                                                        },
+                                                        "next": {
+                                                          "kind": "If",
+                                                          "condition": {
+                                                            "kind": "Binary",
+                                                            "lhs": {
+                                                              "kind": "Var",
+                                                              "text": "a",
+                                                              "location": {
+                                                                "start": 1087,
+                                                                "end": 1088,
+                                                                "filename": "src/files/tests.rinha"
+                                                              }
+                                                            },
+                                                            "op": "Or",
+                                                            "rhs": {
+                                                              "kind": "Var",
+                                                              "text": "b",
+                                                              "location": {
+                                                                "start": 1092,
+                                                                "end": 1093,
+                                                                "filename": "src/files/tests.rinha"
+                                                              }
+                                                            },
+                                                            "location": {
+                                                              "start": 1087,
+                                                              "end": 1093,
+                                                              "filename": "src/files/tests.rinha"
+                                                            }
+                                                          },
+                                                          "then": {
+                                                            "kind": "Int",
+                                                            "value": 1,
+                                                            "location": {
+                                                              "start": 1109,
+                                                              "end": 1110,
+                                                              "filename": "src/files/tests.rinha"
+                                                            }
+                                                          },
+                                                          "otherwise": {
+                                                            "kind": "Binary",
+                                                            "lhs": {
+                                                              "kind": "Call",
+                                                              "callee": {
+                                                                "kind": "Var",
+                                                                "text": "combination",
+                                                                "location": {
+                                                                  "start": 1136,
+                                                                  "end": 1147,
+                                                                  "filename": "src/files/tests.rinha"
+                                                                }
+                                                              },
+                                                              "arguments": [
+                                                                {
+                                                                  "kind": "Binary",
+                                                                  "lhs": {
+                                                                    "kind": "Var",
+                                                                    "text": "n",
+                                                                    "location": {
+                                                                      "start": 1148,
+                                                                      "end": 1149,
+                                                                      "filename": "src/files/tests.rinha"
+                                                                    }
+                                                                  },
+                                                                  "op": "Sub",
+                                                                  "rhs": {
+                                                                    "kind": "Int",
+                                                                    "value": 1,
+                                                                    "location": {
+                                                                      "start": 1152,
+                                                                      "end": 1153,
+                                                                      "filename": "src/files/tests.rinha"
+                                                                    }
+                                                                  },
+                                                                  "location": {
+                                                                    "start": 1148,
+                                                                    "end": 1153,
+                                                                    "filename": "src/files/tests.rinha"
+                                                                  }
+                                                                },
+                                                                {
+                                                                  "kind": "Binary",
+                                                                  "lhs": {
+                                                                    "kind": "Var",
+                                                                    "text": "k",
+                                                                    "location": {
+                                                                      "start": 1155,
+                                                                      "end": 1156,
+                                                                      "filename": "src/files/tests.rinha"
+                                                                    }
+                                                                  },
+                                                                  "op": "Sub",
+                                                                  "rhs": {
+                                                                    "kind": "Int",
+                                                                    "value": 1,
+                                                                    "location": {
+                                                                      "start": 1159,
+                                                                      "end": 1160,
+                                                                      "filename": "src/files/tests.rinha"
+                                                                    }
+                                                                  },
+                                                                  "location": {
+                                                                    "start": 1155,
+                                                                    "end": 1160,
+                                                                    "filename": "src/files/tests.rinha"
+                                                                  }
+                                                                }
+                                                              ],
+                                                              "location": {
+                                                                "start": 1136,
+                                                                "end": 1161,
+                                                                "filename": "src/files/tests.rinha"
+                                                              }
+                                                            },
+                                                            "op": "Add",
+                                                            "rhs": {
+                                                              "kind": "Call",
+                                                              "callee": {
+                                                                "kind": "Var",
+                                                                "text": "combination",
+                                                                "location": {
+                                                                  "start": 1164,
+                                                                  "end": 1175,
+                                                                  "filename": "src/files/tests.rinha"
+                                                                }
+                                                              },
+                                                              "arguments": [
+                                                                {
+                                                                  "kind": "Binary",
+                                                                  "lhs": {
+                                                                    "kind": "Var",
+                                                                    "text": "n",
+                                                                    "location": {
+                                                                      "start": 1176,
+                                                                      "end": 1177,
+                                                                      "filename": "src/files/tests.rinha"
+                                                                    }
+                                                                  },
+                                                                  "op": "Sub",
+                                                                  "rhs": {
+                                                                    "kind": "Int",
+                                                                    "value": 1,
+                                                                    "location": {
+                                                                      "start": 1180,
+                                                                      "end": 1181,
+                                                                      "filename": "src/files/tests.rinha"
+                                                                    }
+                                                                  },
+                                                                  "location": {
+                                                                    "start": 1176,
+                                                                    "end": 1181,
+                                                                    "filename": "src/files/tests.rinha"
+                                                                  }
+                                                                },
+                                                                {
+                                                                  "kind": "Var",
+                                                                  "text": "k",
+                                                                  "location": {
+                                                                    "start": 1183,
+                                                                    "end": 1184,
+                                                                    "filename": "src/files/tests.rinha"
+                                                                  }
+                                                                }
+                                                              ],
+                                                              "location": {
+                                                                "start": 1164,
+                                                                "end": 1185,
+                                                                "filename": "src/files/tests.rinha"
+                                                              }
+                                                            },
+                                                            "location": {
+                                                              "start": 1136,
+                                                              "end": 1185,
+                                                              "filename": "src/files/tests.rinha"
+                                                            }
+                                                          },
+                                                          "location": {
+                                                            "start": 1083,
+                                                            "end": 1191,
+                                                            "filename": "src/files/tests.rinha"
+                                                          }
+                                                        },
+                                                        "location": {
+                                                          "start": 1063,
+                                                          "end": 1191,
+                                                          "filename": "src/files/tests.rinha"
+                                                        }
+                                                      },
+                                                      "location": {
+                                                        "start": 1043,
+                                                        "end": 1191,
+                                                        "filename": "src/files/tests.rinha"
+                                                      }
+                                                    },
+                                                    "location": {
+                                                      "start": 1024,
+                                                      "end": 1193,
+                                                      "filename": "src/files/tests.rinha"
+                                                    }
+                                                  },
+                                                  "next": {
+                                                    "kind": "Let",
+                                                    "name": {
+                                                      "text": "_",
+                                                      "location": {
+                                                        "start": 1199,
+                                                        "end": 1200,
+                                                        "filename": "src/files/tests.rinha"
+                                                      }
+                                                    },
+                                                    "value": {
+                                                      "kind": "Print",
+                                                      "value": {
+                                                        "kind": "Binary",
+                                                        "lhs": {
+                                                          "kind": "Str",
+                                                          "value": "combination(10, 2) = ",
+                                                          "location": {
+                                                            "start": 1209,
+                                                            "end": 1232,
+                                                            "filename": "src/files/tests.rinha"
+                                                          }
+                                                        },
+                                                        "op": "Add",
+                                                        "rhs": {
+                                                          "kind": "Call",
+                                                          "callee": {
+                                                            "kind": "Var",
+                                                            "text": "combination",
+                                                            "location": {
+                                                              "start": 1235,
+                                                              "end": 1246,
+                                                              "filename": "src/files/tests.rinha"
+                                                            }
+                                                          },
+                                                          "arguments": [
+                                                            {
+                                                              "kind": "Int",
+                                                              "value": 10,
+                                                              "location": {
+                                                                "start": 1247,
+                                                                "end": 1249,
+                                                                "filename": "src/files/tests.rinha"
+                                                              }
+                                                            },
+                                                            {
+                                                              "kind": "Int",
+                                                              "value": 2,
+                                                              "location": {
+                                                                "start": 1251,
+                                                                "end": 1252,
+                                                                "filename": "src/files/tests.rinha"
+                                                              }
+                                                            }
+                                                          ],
+                                                          "location": {
+                                                            "start": 1235,
+                                                            "end": 1253,
+                                                            "filename": "src/files/tests.rinha"
+                                                          }
+                                                        },
+                                                        "location": {
+                                                          "start": 1209,
+                                                          "end": 1253,
+                                                          "filename": "src/files/tests.rinha"
+                                                        }
+                                                      },
+                                                      "location": {
+                                                        "start": 1203,
+                                                        "end": 1254,
+                                                        "filename": "src/files/tests.rinha"
+                                                      }
+                                                    },
+                                                    "next": {
+                                                      "kind": "Let",
+                                                      "name": {
+                                                        "text": "fib",
+                                                        "location": {
+                                                          "start": 1260,
+                                                          "end": 1263,
+                                                          "filename": "src/files/tests.rinha"
+                                                        }
+                                                      },
+                                                      "value": {
+                                                        "kind": "Function",
+                                                        "parameters": [
+                                                          {
+                                                            "text": "n",
+                                                            "location": {
+                                                              "start": 1270,
+                                                              "end": 1271,
+                                                              "filename": "src/files/tests.rinha"
+                                                            }
+                                                          }
+                                                        ],
+                                                        "value": {
+                                                          "kind": "If",
+                                                          "condition": {
+                                                            "kind": "Binary",
+                                                            "lhs": {
+                                                              "kind": "Var",
+                                                              "text": "n",
+                                                              "location": {
+                                                                "start": 1284,
+                                                                "end": 1285,
+                                                                "filename": "src/files/tests.rinha"
+                                                              }
+                                                            },
+                                                            "op": "Lt",
+                                                            "rhs": {
+                                                              "kind": "Int",
+                                                              "value": 2,
+                                                              "location": {
+                                                                "start": 1288,
+                                                                "end": 1289,
+                                                                "filename": "src/files/tests.rinha"
+                                                              }
+                                                            },
+                                                            "location": {
+                                                              "start": 1284,
+                                                              "end": 1289,
+                                                              "filename": "src/files/tests.rinha"
+                                                            }
+                                                          },
+                                                          "then": {
+                                                            "kind": "Var",
+                                                            "text": "n",
+                                                            "location": {
+                                                              "start": 1297,
+                                                              "end": 1298,
+                                                              "filename": "src/files/tests.rinha"
+                                                            }
+                                                          },
+                                                          "otherwise": {
+                                                            "kind": "Binary",
+                                                            "lhs": {
+                                                              "kind": "Call",
+                                                              "callee": {
+                                                                "kind": "Var",
+                                                                "text": "fib",
+                                                                "location": {
+                                                                  "start": 1314,
+                                                                  "end": 1317,
+                                                                  "filename": "src/files/tests.rinha"
+                                                                }
+                                                              },
+                                                              "arguments": [
+                                                                {
+                                                                  "kind": "Binary",
+                                                                  "lhs": {
+                                                                    "kind": "Var",
+                                                                    "text": "n",
+                                                                    "location": {
+                                                                      "start": 1318,
+                                                                      "end": 1319,
+                                                                      "filename": "src/files/tests.rinha"
+                                                                    }
+                                                                  },
+                                                                  "op": "Sub",
+                                                                  "rhs": {
+                                                                    "kind": "Int",
+                                                                    "value": 1,
+                                                                    "location": {
+                                                                      "start": 1322,
+                                                                      "end": 1323,
+                                                                      "filename": "src/files/tests.rinha"
+                                                                    }
+                                                                  },
+                                                                  "location": {
+                                                                    "start": 1318,
+                                                                    "end": 1323,
+                                                                    "filename": "src/files/tests.rinha"
+                                                                  }
+                                                                }
+                                                              ],
+                                                              "location": {
+                                                                "start": 1314,
+                                                                "end": 1324,
+                                                                "filename": "src/files/tests.rinha"
+                                                              }
+                                                            },
+                                                            "op": "Add",
+                                                            "rhs": {
+                                                              "kind": "Call",
+                                                              "callee": {
+                                                                "kind": "Var",
+                                                                "text": "fib",
+                                                                "location": {
+                                                                  "start": 1327,
+                                                                  "end": 1330,
+                                                                  "filename": "src/files/tests.rinha"
+                                                                }
+                                                              },
+                                                              "arguments": [
+                                                                {
+                                                                  "kind": "Binary",
+                                                                  "lhs": {
+                                                                    "kind": "Var",
+                                                                    "text": "n",
+                                                                    "location": {
+                                                                      "start": 1331,
+                                                                      "end": 1332,
+                                                                      "filename": "src/files/tests.rinha"
+                                                                    }
+                                                                  },
+                                                                  "op": "Sub",
+                                                                  "rhs": {
+                                                                    "kind": "Int",
+                                                                    "value": 2,
+                                                                    "location": {
+                                                                      "start": 1335,
+                                                                      "end": 1336,
+                                                                      "filename": "src/files/tests.rinha"
+                                                                    }
+                                                                  },
+                                                                  "location": {
+                                                                    "start": 1331,
+                                                                    "end": 1336,
+                                                                    "filename": "src/files/tests.rinha"
+                                                                  }
+                                                                }
+                                                              ],
+                                                              "location": {
+                                                                "start": 1327,
+                                                                "end": 1337,
+                                                                "filename": "src/files/tests.rinha"
+                                                              }
+                                                            },
+                                                            "location": {
+                                                              "start": 1314,
+                                                              "end": 1337,
+                                                              "filename": "src/files/tests.rinha"
+                                                            }
+                                                          },
+                                                          "location": {
+                                                            "start": 1280,
+                                                            "end": 1341,
+                                                            "filename": "src/files/tests.rinha"
+                                                          }
+                                                        },
+                                                        "location": {
+                                                          "start": 1266,
+                                                          "end": 1343,
+                                                          "filename": "src/files/tests.rinha"
+                                                        }
+                                                      },
+                                                      "next": {
+                                                        "kind": "Let",
+                                                        "name": {
+                                                          "text": "_",
+                                                          "location": {
+                                                            "start": 1349,
+                                                            "end": 1350,
+                                                            "filename": "src/files/tests.rinha"
+                                                          }
+                                                        },
+                                                        "value": {
+                                                          "kind": "Print",
+                                                          "value": {
+                                                            "kind": "Binary",
+                                                            "lhs": {
+                                                              "kind": "Str",
+                                                              "value": "fib(10): ",
+                                                              "location": {
+                                                                "start": 1359,
+                                                                "end": 1370,
+                                                                "filename": "src/files/tests.rinha"
+                                                              }
+                                                            },
+                                                            "op": "Add",
+                                                            "rhs": {
+                                                              "kind": "Call",
+                                                              "callee": {
+                                                                "kind": "Var",
+                                                                "text": "fib",
+                                                                "location": {
+                                                                  "start": 1373,
+                                                                  "end": 1376,
+                                                                  "filename": "src/files/tests.rinha"
+                                                                }
+                                                              },
+                                                              "arguments": [
+                                                                {
+                                                                  "kind": "Int",
+                                                                  "value": 10,
+                                                                  "location": {
+                                                                    "start": 1377,
+                                                                    "end": 1379,
+                                                                    "filename": "src/files/tests.rinha"
+                                                                  }
+                                                                }
+                                                              ],
+                                                              "location": {
+                                                                "start": 1373,
+                                                                "end": 1380,
+                                                                "filename": "src/files/tests.rinha"
+                                                              }
+                                                            },
+                                                            "location": {
+                                                              "start": 1359,
+                                                              "end": 1380,
+                                                              "filename": "src/files/tests.rinha"
+                                                            }
+                                                          },
+                                                          "location": {
+                                                            "start": 1353,
+                                                            "end": 1381,
+                                                            "filename": "src/files/tests.rinha"
+                                                          }
+                                                        },
+                                                        "next": {
+                                                          "kind": "Let",
+                                                          "name": {
+                                                            "text": "fib_tc",
+                                                            "location": {
+                                                              "start": 1387,
+                                                              "end": 1393,
+                                                              "filename": "src/files/tests.rinha"
+                                                            }
+                                                          },
+                                                          "value": {
+                                                            "kind": "Function",
+                                                            "parameters": [
+                                                              {
+                                                                "text": "n",
+                                                                "location": {
+                                                                  "start": 1400,
+                                                                  "end": 1401,
+                                                                  "filename": "src/files/tests.rinha"
+                                                                }
+                                                              },
+                                                              {
+                                                                "text": "a",
+                                                                "location": {
+                                                                  "start": 1403,
+                                                                  "end": 1404,
+                                                                  "filename": "src/files/tests.rinha"
+                                                                }
+                                                              },
+                                                              {
+                                                                "text": "b",
+                                                                "location": {
+                                                                  "start": 1406,
+                                                                  "end": 1407,
+                                                                  "filename": "src/files/tests.rinha"
+                                                                }
+                                                              }
+                                                            ],
+                                                            "value": {
+                                                              "kind": "If",
+                                                              "condition": {
+                                                                "kind": "Binary",
+                                                                "lhs": {
+                                                                  "kind": "Var",
+                                                                  "text": "n",
+                                                                  "location": {
+                                                                    "start": 1420,
+                                                                    "end": 1421,
+                                                                    "filename": "src/files/tests.rinha"
+                                                                  }
+                                                                },
+                                                                "op": "Eq",
+                                                                "rhs": {
+                                                                  "kind": "Int",
+                                                                  "value": 0,
+                                                                  "location": {
+                                                                    "start": 1425,
+                                                                    "end": 1426,
+                                                                    "filename": "src/files/tests.rinha"
+                                                                  }
+                                                                },
+                                                                "location": {
+                                                                  "start": 1420,
+                                                                  "end": 1426,
+                                                                  "filename": "src/files/tests.rinha"
+                                                                }
+                                                              },
+                                                              "then": {
+                                                                "kind": "Var",
+                                                                "text": "a",
+                                                                "location": {
+                                                                  "start": 1434,
+                                                                  "end": 1435,
+                                                                  "filename": "src/files/tests.rinha"
+                                                                }
+                                                              },
+                                                              "otherwise": {
+                                                                "kind": "Call",
+                                                                "callee": {
+                                                                  "kind": "Var",
+                                                                  "text": "fib_tc",
+                                                                  "location": {
+                                                                    "start": 1451,
+                                                                    "end": 1457,
+                                                                    "filename": "src/files/tests.rinha"
+                                                                  }
+                                                                },
+                                                                "arguments": [
+                                                                  {
+                                                                    "kind": "Binary",
+                                                                    "lhs": {
+                                                                      "kind": "Var",
+                                                                      "text": "n",
+                                                                      "location": {
+                                                                        "start": 1458,
+                                                                        "end": 1459,
+                                                                        "filename": "src/files/tests.rinha"
+                                                                      }
+                                                                    },
+                                                                    "op": "Sub",
+                                                                    "rhs": {
+                                                                      "kind": "Int",
+                                                                      "value": 1,
+                                                                      "location": {
+                                                                        "start": 1462,
+                                                                        "end": 1463,
+                                                                        "filename": "src/files/tests.rinha"
+                                                                      }
+                                                                    },
+                                                                    "location": {
+                                                                      "start": 1458,
+                                                                      "end": 1463,
+                                                                      "filename": "src/files/tests.rinha"
+                                                                    }
+                                                                  },
+                                                                  {
+                                                                    "kind": "Var",
+                                                                    "text": "b",
+                                                                    "location": {
+                                                                      "start": 1465,
+                                                                      "end": 1466,
+                                                                      "filename": "src/files/tests.rinha"
+                                                                    }
+                                                                  },
+                                                                  {
+                                                                    "kind": "Binary",
+                                                                    "lhs": {
+                                                                      "kind": "Var",
+                                                                      "text": "a",
+                                                                      "location": {
+                                                                        "start": 1468,
+                                                                        "end": 1469,
+                                                                        "filename": "src/files/tests.rinha"
+                                                                      }
+                                                                    },
+                                                                    "op": "Add",
+                                                                    "rhs": {
+                                                                      "kind": "Var",
+                                                                      "text": "b",
+                                                                      "location": {
+                                                                        "start": 1472,
+                                                                        "end": 1473,
+                                                                        "filename": "src/files/tests.rinha"
+                                                                      }
+                                                                    },
+                                                                    "location": {
+                                                                      "start": 1468,
+                                                                      "end": 1473,
+                                                                      "filename": "src/files/tests.rinha"
+                                                                    }
+                                                                  }
+                                                                ],
+                                                                "location": {
+                                                                  "start": 1451,
+                                                                  "end": 1474,
+                                                                  "filename": "src/files/tests.rinha"
+                                                                }
+                                                              },
+                                                              "location": {
+                                                                "start": 1416,
+                                                                "end": 1478,
+                                                                "filename": "src/files/tests.rinha"
+                                                              }
+                                                            },
+                                                            "location": {
+                                                              "start": 1396,
+                                                              "end": 1480,
+                                                              "filename": "src/files/tests.rinha"
+                                                            }
+                                                          },
+                                                          "next": {
+                                                            "kind": "Let",
+                                                            "name": {
+                                                              "text": "_",
+                                                              "location": {
+                                                                "start": 1486,
+                                                                "end": 1487,
+                                                                "filename": "src/files/tests.rinha"
+                                                              }
+                                                            },
+                                                            "value": {
+                                                              "kind": "Print",
+                                                              "value": {
+                                                                "kind": "Binary",
+                                                                "lhs": {
+                                                                  "kind": "Str",
+                                                                  "value": "fib_tc(10000): ",
+                                                                  "location": {
+                                                                    "start": 1496,
+                                                                    "end": 1513,
+                                                                    "filename": "src/files/tests.rinha"
+                                                                  }
+                                                                },
+                                                                "op": "Add",
+                                                                "rhs": {
+                                                                  "kind": "Call",
+                                                                  "callee": {
+                                                                    "kind": "Var",
+                                                                    "text": "fib_tc",
+                                                                    "location": {
+                                                                      "start": 1516,
+                                                                      "end": 1522,
+                                                                      "filename": "src/files/tests.rinha"
+                                                                    }
+                                                                  },
+                                                                  "arguments": [
+                                                                    {
+                                                                      "kind": "Int",
+                                                                      "value": 10000,
+                                                                      "location": {
+                                                                        "start": 1523,
+                                                                        "end": 1528,
+                                                                        "filename": "src/files/tests.rinha"
+                                                                      }
+                                                                    },
+                                                                    {
+                                                                      "kind": "Int",
+                                                                      "value": 0,
+                                                                      "location": {
+                                                                        "start": 1530,
+                                                                        "end": 1531,
+                                                                        "filename": "src/files/tests.rinha"
+                                                                      }
+                                                                    },
+                                                                    {
+                                                                      "kind": "Int",
+                                                                      "value": 1,
+                                                                      "location": {
+                                                                        "start": 1533,
+                                                                        "end": 1534,
+                                                                        "filename": "src/files/tests.rinha"
+                                                                      }
+                                                                    }
+                                                                  ],
+                                                                  "location": {
+                                                                    "start": 1516,
+                                                                    "end": 1535,
+                                                                    "filename": "src/files/tests.rinha"
+                                                                  }
+                                                                },
+                                                                "location": {
+                                                                  "start": 1496,
+                                                                  "end": 1535,
+                                                                  "filename": "src/files/tests.rinha"
+                                                                }
+                                                              },
+                                                              "location": {
+                                                                "start": 1490,
+                                                                "end": 1536,
+                                                                "filename": "src/files/tests.rinha"
+                                                              }
+                                                            },
+                                                            "next": {
+                                                              "kind": "Print",
+                                                              "value": {
+                                                                "kind": "Str",
+                                                                "value": "Done showcase",
+                                                                "location": {
+                                                                  "start": 1544,
+                                                                  "end": 1559,
+                                                                  "filename": "src/files/tests.rinha"
+                                                                }
+                                                              },
+                                                              "location": {
+                                                                "start": 1538,
+                                                                "end": 1560,
+                                                                "filename": "src/files/tests.rinha"
+                                                              }
+                                                            },
+                                                            "location": {
+                                                              "start": 1482,
+                                                              "end": 1560,
+                                                              "filename": "src/files/tests.rinha"
+                                                            }
+                                                          },
+                                                          "location": {
+                                                            "start": 1383,
+                                                            "end": 1560,
+                                                            "filename": "src/files/tests.rinha"
+                                                          }
+                                                        },
+                                                        "location": {
+                                                          "start": 1345,
+                                                          "end": 1560,
+                                                          "filename": "src/files/tests.rinha"
+                                                        }
+                                                      },
+                                                      "location": {
+                                                        "start": 1256,
+                                                        "end": 1560,
+                                                        "filename": "src/files/tests.rinha"
+                                                      }
+                                                    },
+                                                    "location": {
+                                                      "start": 1195,
+                                                      "end": 1560,
+                                                      "filename": "src/files/tests.rinha"
+                                                    }
+                                                  },
+                                                  "location": {
+                                                    "start": 1006,
+                                                    "end": 1560,
+                                                    "filename": "src/files/tests.rinha"
+                                                  }
+                                                },
+                                                "location": {
+                                                  "start": 967,
+                                                  "end": 1560,
+                                                  "filename": "src/files/tests.rinha"
+                                                }
+                                              },
+                                              "location": {
+                                                "start": 884,
+                                                "end": 1560,
+                                                "filename": "src/files/tests.rinha"
+                                              }
+                                            },
+                                            "location": {
+                                              "start": 776,
+                                              "end": 1560,
+                                              "filename": "src/files/tests.rinha"
+                                            }
+                                          },
+                                          "location": {
+                                            "start": 735,
+                                            "end": 1560,
+                                            "filename": "src/files/tests.rinha"
+                                          }
+                                        },
+                                        "location": {
+                                          "start": 697,
+                                          "end": 1560,
+                                          "filename": "src/files/tests.rinha"
+                                        }
+                                      },
+                                      "location": {
+                                        "start": 632,
+                                        "end": 1560,
+                                        "filename": "src/files/tests.rinha"
+                                      }
+                                    },
+                                    "location": {
+                                      "start": 587,
+                                      "end": 1560,
+                                      "filename": "src/files/tests.rinha"
+                                    }
+                                  },
+                                  "location": {
+                                    "start": 529,
+                                    "end": 1560,
+                                    "filename": "src/files/tests.rinha"
+                                  }
+                                },
+                                "location": {
+                                  "start": 496,
+                                  "end": 1560,
+                                  "filename": "src/files/tests.rinha"
+                                }
+                              },
+                              "location": {
+                                "start": 452,
+                                "end": 1560,
+                                "filename": "src/files/tests.rinha"
+                              }
+                            },
+                            "location": {
+                              "start": 384,
+                              "end": 1560,
+                              "filename": "src/files/tests.rinha"
+                            }
+                          },
+                          "location": {
+                            "start": 345,
+                            "end": 1560,
+                            "filename": "src/files/tests.rinha"
+                          }
+                        },
+                        "location": {
+                          "start": 313,
+                          "end": 1560,
+                          "filename": "src/files/tests.rinha"
+                        }
+                      },
+                      "location": {
+                        "start": 278,
+                        "end": 1560,
+                        "filename": "src/files/tests.rinha"
+                      }
+                    },
+                    "location": {
+                      "start": 248,
+                      "end": 1560,
+                      "filename": "src/files/tests.rinha"
+                    }
+                  },
+                  "location": {
+                    "start": 218,
+                    "end": 1560,
+                    "filename": "src/files/tests.rinha"
+                  }
+                },
+                "location": {
+                  "start": 196,
+                  "end": 1560,
+                  "filename": "src/files/tests.rinha"
+                }
+              },
+              "location": {
+                "start": 173,
+                "end": 1560,
+                "filename": "src/files/tests.rinha"
+              }
+            },
+            "location": {
+              "start": 150,
+              "end": 1560,
+              "filename": "src/files/tests.rinha"
+            }
+          },
+          "location": {
+            "start": 105,
+            "end": 1560,
+            "filename": "src/files/tests.rinha"
+          }
+        },
+        "location": {
+          "start": 70,
+          "end": 1560,
+          "filename": "src/files/tests.rinha"
+        }
+      },
+      "location": {
+        "start": 35,
+        "end": 1560,
+        "filename": "src/files/tests.rinha"
+      }
+    },
+    "location": { "start": 0, "end": 1560, "filename": "src/files/tests.rinha" }
+  },
+  "location": { "start": 0, "end": 1560, "filename": "src/files/tests.rinha" }
+}

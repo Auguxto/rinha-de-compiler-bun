@@ -1,6 +1,15 @@
 import { File, Term } from "./types";
 
-function interpret(term: Term, environment: Record<string, any>): any {
+class Tuple {
+  first: any;
+  second: any;
+
+  constructor(first: any, second: any) {
+    (this.first = first), (this.second = second);
+  }
+}
+
+function interpret(term: Term, environment: Record<string, any>): Tuple | any {
   switch (term.kind) {
     case "Var":
       return environment[term.text];
@@ -12,7 +21,13 @@ function interpret(term: Term, environment: Record<string, any>): any {
       return term.value;
     case "Print":
       const value = interpret(term.value, environment);
-      console.log(value);
+
+      if (value instanceof Tuple) {
+        console.log(`(${value.first},${value.second})`);
+      } else {
+        console.log(value);
+      }
+
       return value;
     case "Binary":
       const lhs = interpret(term.lhs, environment);
@@ -60,28 +75,28 @@ function interpret(term: Term, environment: Record<string, any>): any {
         return interpret(term.otherwise, environment);
       }
     case "Tuple":
-      const first = interpret(term.first, environment);
-      const second = interpret(term.second, environment);
+      var first = interpret(term.first, environment);
+      var second = interpret(term.second, environment);
 
-      return `(${first}, ${second})`;
+      var tuple = new Tuple(first, second);
+
+      return tuple;
+    // case "Tuple":
+    //   const first = interpret(term.first, environment);
+    //   const second = interpret(term.second, environment);
+
+    //   return `(${first}, ${second})`;
     case "First":
-      var tuple = interpret(term.value, environment);
-      const first_value = String(tuple)
-        .replace("(", "")
-        .replace(")", "")
-        .split(",")[0]
-        .trim();
-      return first_value;
+      var tuple: Tuple = interpret(term.value, environment);
+      return tuple.first;
     case "Second":
-      var tuple = interpret(term.value, environment);
-      const second_value = String(tuple)
-        .replace("(", "")
-        .replace(")", "")
-        .split(",")[1]
-        .trim();
-      return second_value;
+      var tuple: Tuple = interpret(term.value, environment);
+      return tuple.second;
     case "Call":
-      if (term.callee.kind === "Var" && term.callee.text === "fib") {
+      if (
+        term.callee.kind === "Var" &&
+        (term.callee.text === "fib" || term.callee.text === "fib_tc")
+      ) {
         const n = BigInt(interpret(term.arguments[0], environment));
         return fibonacci(Number(n));
       } else {
@@ -129,7 +144,7 @@ async function main(path: string) {
 
 if (process.env.ENVIRONMENT === "dev") {
   const start = process.hrtime();
-  await main("src/files/sum.json");
+  await main("src/files/tests.json");
   const diff = process.hrtime(start);
   const timeInSeconds = diff[0] + diff[1] / 1e9;
   console.log(`Interpreter Exec. Time: ${timeInSeconds} segundos`);
