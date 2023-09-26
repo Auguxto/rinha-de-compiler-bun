@@ -1,0 +1,5 @@
+let sum = fn (a,b) => {
+  print(a + b)
+};
+
+print(sum + true)

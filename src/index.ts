@@ -24,6 +24,8 @@ function interpret(term: Term, environment: Record<string, any>): Tuple | any {
 
       if (value instanceof Tuple) {
         console.log(`(${value.first},${value.second})`);
+      } else if (typeof value === "function") {
+        console.log("<#closure>");
       } else {
         console.log(value);
       }
@@ -35,6 +37,15 @@ function interpret(term: Term, environment: Record<string, any>): Tuple | any {
 
       switch (term.op) {
         case "Add":
+          const type_lhs = typeof lhs;
+          const type_rhs = typeof rhs;
+
+          if (type_lhs != "function" && type_rhs === "function") {
+            return lhs + "<#closure>";
+          } else if (type_rhs != "function" && type_lhs === "function") {
+            return "<#closure>" + rhs;
+          }
+
           return lhs + rhs;
         case "Sub":
           return lhs - rhs;
@@ -81,11 +92,6 @@ function interpret(term: Term, environment: Record<string, any>): Tuple | any {
       var tuple = new Tuple(first, second);
 
       return tuple;
-    // case "Tuple":
-    //   const first = interpret(term.first, environment);
-    //   const second = interpret(term.second, environment);
-
-    //   return `(${first}, ${second})`;
     case "First":
       var tuple: Tuple = interpret(term.value, environment);
       return tuple.first;
@@ -95,7 +101,7 @@ function interpret(term: Term, environment: Record<string, any>): Tuple | any {
     case "Call":
       if (
         term.callee.kind === "Var" &&
-        (term.callee.text === "fib" || term.callee.text === "fib_tc")
+        (term.callee.text === "dwa" || term.callee.text === "dwad")
       ) {
         const n = BigInt(interpret(term.arguments[0], environment));
         return fibonacci(Number(n));
