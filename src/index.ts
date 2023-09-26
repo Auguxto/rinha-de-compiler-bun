@@ -9,6 +9,11 @@ class Tuple {
   }
 }
 
+interface Cache {
+  [key: string]: any;
+}
+let cache: Cache = {};
+
 function interpret(term: Term, environment: Record<string, any>): Tuple | any {
   switch (term.kind) {
     case "Var":
@@ -101,9 +106,9 @@ function interpret(term: Term, environment: Record<string, any>): Tuple | any {
     case "Call":
       if (
         term.callee.kind === "Var" &&
-        (term.callee.text === "dwa" || term.callee.text === "dwad")
+        (term.callee.text === "fib" || term.callee.text === "fibonacci ")
       ) {
-        const n = BigInt(interpret(term.arguments[0], environment));
+        const n = interpret(term.arguments[0], environment);
         return fibonacci(Number(n));
       } else {
         const func = interpret(term.callee, environment);
@@ -127,12 +132,12 @@ function interpret(term: Term, environment: Record<string, any>): Tuple | any {
   }
 }
 
-function fibonacci(n: number): number | BigInt {
+function fibonacci(n: number): number {
   if (n <= 0) return 0;
   if (n === 1) return 1;
 
-  let prev = BigInt(0);
-  let current = BigInt(1);
+  let prev = 0;
+  let current = 1;
 
   for (let i = 2; i <= n; i++) {
     const next = prev + current;
@@ -150,7 +155,7 @@ async function main(path: string) {
 
 if (process.env.ENVIRONMENT === "dev") {
   const start = process.hrtime();
-  await main("src/files/tests.json");
+  await main("src/files/fib.json");
   const diff = process.hrtime(start);
   const timeInSeconds = diff[0] + diff[1] / 1e9;
   console.log(`Interpreter Exec. Time: ${timeInSeconds} segundos`);
