@@ -1,51 +1,22 @@
 {
-  "name": "files/tuple.rinhha",
+  "name": "files/tuple.rinha",
   "expression": {
-    "kind": "Let",
-    "name": {
-      "text": "tuple",
-      "location": { "start": 4, "end": 9, "filename": "files/tuple.rinhha" }
-    },
+    "kind": "Print",
     "value": {
       "kind": "Tuple",
       "first": {
-        "kind": "Print",
-        "value": {
-          "kind": "Int",
-          "value": 1,
-          "location": {
-            "start": 19,
-            "end": 20,
-            "filename": "files/tuple.rinhha"
-          }
-        },
-        "location": { "start": 13, "end": 21, "filename": "files/tuple.rinhha" }
+        "kind": "Str",
+        "value": "a",
+        "location": { "start": 7, "end": 10, "filename": "files/tuple.rinha" }
       },
       "second": {
-        "kind": "Print",
-        "value": {
-          "kind": "Int",
-          "value": 2,
-          "location": {
-            "start": 29,
-            "end": 30,
-            "filename": "files/tuple.rinhha"
-          }
-        },
-        "location": { "start": 23, "end": 31, "filename": "files/tuple.rinhha" }
+        "kind": "Int",
+        "value": 2,
+        "location": { "start": 12, "end": 13, "filename": "files/tuple.rinha" }
       },
-      "location": { "start": 12, "end": 32, "filename": "files/tuple.rinhha" }
+      "location": { "start": 6, "end": 14, "filename": "files/tuple.rinha" }
     },
-    "next": {
-      "kind": "Print",
-      "value": {
-        "kind": "Var",
-        "text": "tuple",
-        "location": { "start": 40, "end": 45, "filename": "files/tuple.rinhha" }
-      },
-      "location": { "start": 34, "end": 46, "filename": "files/tuple.rinhha" }
-    },
-    "location": { "start": 0, "end": 46, "filename": "files/tuple.rinhha" }
+    "location": { "start": 0, "end": 15, "filename": "files/tuple.rinha" }
   },
-  "location": { "start": 0, "end": 46, "filename": "files/tuple.rinhha" }
+  "location": { "start": 0, "end": 15, "filename": "files/tuple.rinha" }
 }

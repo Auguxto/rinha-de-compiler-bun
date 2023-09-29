@@ -40,11 +40,11 @@ function interpret(term: Term, environment: Record<string, any>): Tuple | any {
       const lhs = interpret(term.lhs, environment);
       const rhs = interpret(term.rhs, environment);
 
+      const type_lhs = typeof lhs;
+      const type_rhs = typeof rhs;
+
       switch (term.op) {
         case "Add":
-          const type_lhs = typeof lhs;
-          const type_rhs = typeof rhs;
-
           if (type_lhs != "function" && type_rhs === "function") {
             return lhs + "<#closure>";
           } else if (type_rhs != "function" && type_lhs === "function") {
@@ -53,17 +53,32 @@ function interpret(term: Term, environment: Record<string, any>): Tuple | any {
 
           return lhs + rhs;
         case "Sub":
+          if (type_lhs !== "number" || type_rhs !== "number") {
+            throw new Error("Operção inválida.");
+          }
           return lhs - rhs;
         case "Mul":
+          if (type_lhs !== "number" || type_rhs !== "number") {
+            throw new Error("Operção inválida.");
+          }
           return lhs * rhs;
         case "Div":
-          if (rhs === 0) {
-            throw new Error("Divisão por zero");
+          if (type_lhs !== "number" || type_rhs !== "number") {
+            throw new Error("Operção inválida.");
           }
-          return lhs / rhs;
+          if (rhs === 0) {
+            throw new Error("Divisão por zero.");
+          }
+          return Math.floor(lhs / rhs);
         case "Rem":
+          if (rhs === 0) {
+            throw new Error("Operção inválida.");
+          }
           return lhs % rhs;
         case "Eq":
+          if (type_lhs !== "number" || type_rhs !== "number") {
+            throw new Error("Operção inválida.");
+          }
           return lhs == rhs;
         case "Neq":
           return lhs != rhs;
@@ -155,7 +170,7 @@ async function main(path: string) {
 
 if (process.env.ENVIRONMENT === "dev") {
   const start = process.hrtime();
-  await main("src/files/fib.json");
+  await main("src/files/sub.json");
   const diff = process.hrtime(start);
   const timeInSeconds = diff[0] + diff[1] / 1e9;
   console.log(`Interpreter Exec. Time: ${timeInSeconds} segundos`);
