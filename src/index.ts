@@ -9,11 +9,6 @@ class Tuple {
   }
 }
 
-interface Cache {
-  [key: string]: any;
-}
-let cache: Cache = {};
-
 function interpret(term: Term, environment: Record<string, any>): Tuple | any {
   switch (term.kind) {
     case "Var":
@@ -95,7 +90,7 @@ function interpret(term: Term, environment: Record<string, any>): Tuple | any {
         case "Or":
           return Boolean(lhs) || Boolean(rhs);
         default:
-          return console.error("Operador não encontrado");
+          return console.error("Operador não encontrado.");
       }
     case "If":
       const condition = interpret(term.condition, environment);
@@ -119,18 +114,10 @@ function interpret(term: Term, environment: Record<string, any>): Tuple | any {
       var tuple: Tuple = interpret(term.value, environment);
       return tuple.second;
     case "Call":
-      if (
-        term.callee.kind === "Var" &&
-        (term.callee.text === "fib" || term.callee.text === "fibonacci ")
-      ) {
-        const n = interpret(term.arguments[0], environment);
-        return fibonacci(Number(n));
-      } else {
-        const func = interpret(term.callee, environment);
-        const args = term.arguments.map((arg) => interpret(arg, environment));
+      const func = interpret(term.callee, environment);
+      const args = term.arguments.map((arg) => interpret(arg, environment));
 
-        return func(...args);
-      }
+      return func(...args);
     case "Function":
       return (...args: any[]) => {
         const func_environment = { ...environment };
@@ -147,22 +134,6 @@ function interpret(term: Term, environment: Record<string, any>): Tuple | any {
   }
 }
 
-function fibonacci(n: number): number {
-  if (n <= 0) return 0;
-  if (n === 1) return 1;
-
-  let prev = 0;
-  let current = 1;
-
-  for (let i = 2; i <= n; i++) {
-    const next = prev + current;
-    prev = current;
-    current = next;
-  }
-
-  return current;
-}
-
 async function main(path: string) {
   const ast = (await Bun.file(path).json()) as File;
   interpret(ast.expression, {});
@@ -173,11 +144,11 @@ if (process.env.ENVIRONMENT === "dev") {
   await main("src/files/sub.json");
   const diff = process.hrtime(start);
   const timeInSeconds = diff[0] + diff[1] / 1e9;
-  console.log(`Interpreter Exec. Time: ${timeInSeconds} segundos`);
+  console.log(`Interpreter Exec. Time: ${timeInSeconds} sec`);
 } else {
   const start = process.hrtime();
   await main("/var/rinha/source.rinha.json");
   const diff = process.hrtime(start);
   const timeInSeconds = diff[0] + diff[1] / 1e9;
-  console.log(`Interpreter Exec. Time: ${timeInSeconds} segundos`);
+  console.log(`Interpreter Exec. Time: ${timeInSeconds} sec`);
 }
